@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        
+    body{
+        background-color: rgb(161, 139, 139);
+        width: 1920px;
+      }
+    #container{
+        background-color: rgb(160, 173, 173);
+        max-width: 960px;
+        margin: 0px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #main_menu{
+        display: flex;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+    #main_menu li a{
+        color: black;
+        display: block;
+        padding: 18px 20px;
+        text-decoration: none;
+    }
+
+    h1{
+        padding: 5px 5px;
+        font-size: 40px;
+    }
+    
+   
+ #right img{
+    padding: 10px 10px;
+    height: 40px;
+    width: 40px;
+ }
+
+ 
+
+
+
+
+#grid-container {
+  max-width: 960px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns:300px 660px;
+  background-color: #2196F3;
+  
+}
+
+
+#grid-container .sub-item1{
+    background-color: azure;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+} 
+
+.sub-item1 h2{
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.sub-item1 p{
+    font-size: 20px;
+    margin-left: 50px;
+    
+}
+
+.sub-item1 .bt1{
+    font-size: 20px;
+    margin-left: 50px;
+    
+}
+
+
+
+#grid-container .sub-item2{
+    background-color: rgb(68, 131, 131);
+    padding: 10px;
+    
+
+} 
+
+#grid-container .sub-item2 img{
+    background-color: rgb(68, 131, 131);
+    padding: 20px;
+    display: flex;
+
+} 
+
+
+
+.bt1 {
+  background-color: none;
+  color: #bfcc0f; 
+  border: 2px solid #bfcc0f;
+  padding: 15px 32px;
+  margin-bottom: 5px;
+  border-radius: 12px;
+}
+
+
+
+
+
+
+
+   
+   
+    
+
+    </style>
+</head>
+<body>
+    
+    <div id="wrapper">
+    <nav id="container">
+        
+       
+                <h1>Jeep</h1>
+           
+            
+                <ul id="main_menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Vehicles</a></li>
+                    <li><a href="">Serviece</a></li>
+                    <li><a href="">Test Drive</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+           
+            <div id="right">
+                <img src="mail.png" alt="email">
+                <img src="phone.png" alt="phone">
+                <img src="search.png" alt="search">
+            </div>
+
+        
+    </nav>
+        
+    <div id="grid-container">
+        <div class="grid-item">
+            <div class="sub-item1">
+                <h2>COMPASS</h2>
+                <p>dasdasdasdasdasdasasd</p>
+                <input class="bt1" type="button" value="Know More">
+
+            </div>
+
+            <div class="sub-item2">
+                <img src="fb.png" alt="">
+                <img src="ig.png" alt="">
+                <img src="tw.png" alt="">
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="car.jfif" alt="">
+        </div>
+        
+      </div>
+        
+        
+    </div>
+</body>
+</html>

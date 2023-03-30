@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .item{
+            background-color: aqua;
+            border: 1px solid black;
+            height: auto; 
+        }
+
+        #container{
+            max-width: 960px;
+            margin: 0px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 60px 100px 600px 60px;
+        }
+        .item1{
+            grid-column-start: 1 ;
+            grid-column-end: 6;
+        }
+        .item5{
+            grid-column:  1 / 6;
+            grid-row: 2 / 3;
+        }
+
+        .item2{
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+            min-height: 60px;
+            max-height: auto;
+        }
+
+        .item3{
+            grid-column: 2 / 6;
+            grid-row: 3 / 4;
+        }
+
+        .item4{
+            grid-column: 1 / 6;
+            grid-row: 4 / 5;
+        }
+
+        .center{
+            width: 500px;
+            
+        }
+
+        .item1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            color: aliceblue;
+            
+        }
+
+        .item1 ul li:hover>a{
+            color: red;
+        }
+
+
+        .main-menu{
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            
+            padding: 0px;
+            
+            
+        
+           
+        }
+        .main-menu li a{
+            
+            color: black;
+            display: block;
+            padding: 0px;
+
+
+
+        }
+        .main-menu li{
+            position: relative;
+        }
+
+        .main-menu ul.submenu{
+            list-style: none;
+            position: absolute;
+            background-color: antiquewhite;
+            padding: 18px 20px;
+            width: 120px;
+            display: none;
+        }
+
+        
+
+        .main-menu li:hover>ul.submenu{
+            display: block;
+        }
+
+        .right{
+            padding-right: 5px;
+        }
+
+        .item4{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        
+         li{
+            list-style: none;
+         }
+
+
+        .item3 .sanpham div{
+            display: flex;
+        }
+
+
+        
+
+        
+
+
+
+
+
+
+
+
+        
+
+        
+
+
+      
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item1 item">
+            
+            <div class="center">
+                <ul class="main-menu">
+                    <li><a href="">Trang chủ|</a></li>
+                    <li><a href="">giới thiệu|</a></li>
+                    <li><a href="">Sản Phẩm|</a></li>
+                    <li><a href="">Hỏi Đáp|</a></li>
+                    <li><a href="">Tư Vấn|</a></li>
+                    <li><a href="">Giỏ hàng|</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <input type="text" id="" name="" placeholder="tim kiem">
+                <input type="button" value="Tìm Kiếm">
+            </div>
+        </div>
+        <div class="item5 item">
+            
+        </div>
+        <div class="item2 item"><nav>
+            <ul>
+                <li><a href=""><img src="" alt="hình">  Trang điểm</a></li>
+                <li><a href=""><img src="" alt="hình">  Dưỡng da</a></li>
+                <li><a href=""><img src="" alt="hình">  Dưỡng thể</a></li>
+                <li><a href=""><img src="" alt="hình">  Dưỡng tóc</a></li>
+            </ul>
+        </nav>
+
+        <img src="" alt="chèn hình">
+        <form action="">
+            <label for="">Tên Đạng nhập</label>
+            <input type="text" >
+            <label for="">Mật khẩu</label>
+            <input type="text" >
+            <input type="checkbox" name="" id=""> <label for="">Đại lý</label>
+            <input type="checkbox" name="" id=""> <label for="">Cá Nhân</label>
+            <input style="margin-left: 35px;" type="button" value="Đăng Nhập">
+        </form>
+    </div>
+        <div class="item3 item"> 
+            <h1>Các Sản Phẩm</h1>
+            <div class="sanpham">
+                <div><img src="" alt="hình sp1"><p>Các bộ dưỡng da co cấp</p><p>nhờ cac1than2h phần</p></div>
+                <div><img src="" alt="hình sp2"><p>Cácloai mặt nạ</p><p>wdadadadsd</p></div>
+                <div><img src="" alt="hình sp3"><p>Các mỹ phẩm</p><p>nhờ cac1than2h phần</p></div>
+
+
+            </div>
+        </div>
+        <div class="item4 item">
+            <p>Cao Minh Phúc</p>
+            <p>MSSV:19430891</p>
+        </div>
+    </div>
+</body>
+</html>
